@@ -26,11 +26,11 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    libinit_baconcaf \
-    fstab.baconcaf \
-    init.baconcaf.rc \
+    libinit_bacon \
+    fstab.bacon \
+    init.bacon.rc \
     init.qcom.usb.rc \
-    ueventd.baconcaf.rc
+    ueventd.bacon.rc
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -55,11 +55,11 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.baconcaf
+    power.bacon
 
 # Recovery
 PRODUCT_EXTRA_RECOVERY_KEYS += \
-    $(LOCAL_PATH)/baconcaf
+    $(LOCAL_PATH)/bacon
 
 # System properties
 PRODUCT_PROPERTY_OVERRIDES += \
