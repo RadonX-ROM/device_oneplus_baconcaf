@@ -23,6 +23,6 @@
     "remote": "th",
     "repository": "android_kernel_oneplus_msm8974",
     "target_path": "kernel/oneplus/msm8974-caf",
-    "revision": "lp-mr1-caf"
+    "revision": "lpcaf"
   }
 ]
