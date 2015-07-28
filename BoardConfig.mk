@@ -46,7 +46,7 @@ TARGET_RECOVERY_FSTAB := device/oneplus/baconcaf/rootdir/etc/fstab.baconcaf
 
 TARGET_OTA_ASSERT_DEVICE := bacon,A0001
 
-TARGET_INIT_VENDOR_LIB := libinit_baconcaf
+TARGET_INIT_VENDOR_LIB := libinit_bacon
 
 TARGET_WCNSS_MAC_PREFIX := e8bba8
 
