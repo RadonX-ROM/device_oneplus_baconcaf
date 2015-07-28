@@ -17,11 +17,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from find7 device
-$(call inherit-product, device/oneplus/bacon/bacon.mk)
+$(call inherit-product, device/oneplus/baconcaf/baconcaf.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := full_bacon
-PRODUCT_DEVICE := bacon
+PRODUCT_NAME := full_baconcaf
+PRODUCT_DEVICE := baconcaf
 PRODUCT_BRAND := oneplus
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := OnePlusOne

@@ -26,11 +26,11 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    libinit_bacon \
-    fstab.bacon \
-    init.bacon.rc \
+    libinit_baconcaf \
+    fstab.baconcaf \
+    init.baconcaf.rc \
     init.qcom.usb.rc \
-    ueventd.bacon.rc
+    ueventd.baconcaf.rc
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -55,11 +55,11 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.bacon
+    power.baconcaf
 
 # Recovery
 PRODUCT_EXTRA_RECOVERY_KEYS += \
-    $(LOCAL_PATH)/bacon
+    $(LOCAL_PATH)/baconcaf
 
 # System properties
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -76,11 +76,11 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-dalv
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/oneplus/bacon/bacon-vendor.mk)
+$(call inherit-product-if-exists, vendor/oneplus/baconcaf/baconcaf-vendor.mk)
 
 ifneq ($(QCPATH),)
 $(call inherit-product-if-exists, $(QCPATH)/prebuilt_HY11/target/product/msm8974/prebuilt.mk)
 endif
 
 # Inherit from msm8974-common
-$(call inherit-product, device/oppo/msm8974-common/msm8974.mk)
+$(call inherit-product, device/oppo/msm8974-caf-common/msm8974.mk)

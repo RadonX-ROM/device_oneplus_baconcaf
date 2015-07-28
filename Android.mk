@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),bacon)
+ifeq ($(TARGET_DEVICE),baconcaf)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

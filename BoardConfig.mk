@@ -15,14 +15,17 @@
 #
 
 # Inherit from MSM8974 common
--include device/oppo/msm8974-common/BoardConfigCommon.mk
+-include device/oppo/msm8974-caf-common/BoardConfigCommon.mk
+
+# CAF HALs
+TARGET_CAF_IDENTIFIER := -vanilla
 
 # Kernel
-TARGET_KERNEL_CONFIG := bacon_defconfig
+TARGET_KERNEL_CONFIG := render_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oneplus/bacon/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oneplus/baconcaf/bluetooth
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
@@ -39,11 +42,11 @@ BOARD_USERDATAEXTRAIMAGE_PARTITION_SIZE := 59914792960
 BOARD_USERDATAEXTRAIMAGE_PARTITION_NAME := 64G
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/oneplus/bacon/rootdir/etc/fstab.bacon
+TARGET_RECOVERY_FSTAB := device/oneplus/baconcaf/rootdir/etc/fstab.baconcaf
 
 TARGET_OTA_ASSERT_DEVICE := bacon,A0001
 
-TARGET_INIT_VENDOR_LIB := libinit_bacon
+TARGET_INIT_VENDOR_LIB := libinit_baconcaf
 
 TARGET_WCNSS_MAC_PREFIX := e8bba8
 
@@ -55,4 +58,4 @@ BOARD_VOLD_CRYPTFS_MIGRATE := true
 BOARD_NFC_CHIPSET := pn547
 
 # inherit from the proprietary version
--include vendor/oneplus/bacon/BoardConfigVendor.mk
+-include vendor/oneplus/baconcaf/BoardConfigVendor.mk
