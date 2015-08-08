@@ -14,13 +14,12 @@
     "target_path": "device/oppo/msm8974-caf-common",
     "revision": "lp-mr1-caf"
   },
-  { "remote": "teameos",
+  { "remote": "cm",
     "repository": "android_device_oppo_common",
     "target_path": "device/oppo/common",
-    "revision": "lp5.1"
+    "revision": "cm-12.1"
   },
-  {
-    "remote": "gh",
+  { "remote": "gh",
     "repository": "RenderBroken/msm8974_OPO-CAF_render_kernel",
     "target_path": "kernel/oneplus/msm8974-caf",
     "revision": "cm-12.x-caf"
